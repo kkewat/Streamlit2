@@ -116,8 +116,9 @@ def main():
         predicted_class, top_n_probability = predict(uploaded_file)
         #st.write("Prediction: ", predicted_class)
         st.markdown(f"**Prediction:** {predicted_class}", unsafe_allow_html=True)
-        st.markdown("**Probability of top n classes with maximum classes:**")
-        st.markdown(f"{top_n_probability}")
+        st.markdown("**Probability of top 5 classes with maximum classes:**")
+        for pred_class, prob in top_n_predictions:
+            st.markdown(f"- Class {pred_class}: Probability {prob:.4f}\n")
 
 if __name__ == "__main__":
     main()
