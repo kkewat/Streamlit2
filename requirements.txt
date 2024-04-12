@@ -1,0 +1,12 @@
+flask
+numpy
+tensorflow
+streamlit
+opencv-python
+pandas
+requests
+matplotlib
+scikit-learn
+beautifulsoup4
+pillow
+gunicorn
