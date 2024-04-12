@@ -84,7 +84,7 @@ def predict(image_file):
     predicted_class = np.argmax(preds)
     predicted_class_name = classes(predicted_class)
     # Replace the prediction probabilities with your actual values
-    prediction_probabilities = np.array(predictions)
+    prediction_probabilities = np.array(preds)
     # Apply softmax
     probabilities = np.exp(prediction_probabilities) / np.sum(np.exp(prediction_probabilities))
     max_prob_index = np.argmax(probabilities)
