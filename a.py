@@ -94,7 +94,7 @@ def predict(image_file):
     sorted_indices = np.argsort(probabilities)[0][::-1]
     
     # Extract the top four classes and their probabilities
-    top_classes = sorted_indices[:4]
+    top_classes = sorted_indices[:9]
     top_probabilities = probabilities[0, top_classes]
 
     top_n_prediction = []
