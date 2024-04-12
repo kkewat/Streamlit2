@@ -97,7 +97,7 @@ def predict(image_file):
     top_classes = sorted_indices[:4]
     top_probabilities = probabilities[0, top_classes]
 
-    top_n_predicction = []
+    top_n_prediction = []
 
     for i, (class_idx, prob) in enumerate(zip(top_classes, top_probabilities), 1):
         prediction = f"Class {classes(class_idx)}: Probability {prob:.4f}"
